@@ -1,0 +1,279 @@
+:root {
+    --primary-color: rgb(1, 154, 214);
+    --secondary-color: rgb(66, 66, 66);
+    --tertiary-color: rgb(218, 218, 238);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+
+}
+
+header h1 {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    color: var(--secondary-color);
+    margin: 5px 10px 5px 30px;
+    padding-left: 20px;
+}
+
+.Header-Box {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 30%;
+    background-color: var(--primary-color);
+    margin: 10px 10px 10px 0px;
+    padding-left: 15px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    padding-top: 20px
+}
+
+header nav ul li a {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 15px 5px 15px;
+    margin: 10px;
+    font-weight: lighter;
+    font-size: 1.25em;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: 3px solid;
+}
+
+body {
+    background-color: var(--tertiary-color);
+}
+
+footer h3 {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.fun {
+    padding: 5px;
+}
+
+.primary-border {
+    border-color: var(--primary-color);
+}
+
+.hero {
+    background-image: url("../images/Potential-Background1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 100px;
+}
+
+.hero-box {
+    position: absolute;
+    right: 30px;
+    padding-top: 20px;
+    color: var(--secondary-color);
+}
+
+.hero h2 {
+    background-color: var(--primary-color);
+    border: thick double var(--secondary-color);
+    border-radius: 10px;
+    padding: 5px;
+    /*Add font-size 5vw for media query for this on small screens*/
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: flex-start;
+    padding: 25px 15px;
+}
+
+
+.row-header {
+    width: 20%;
+}
+
+p {
+    font-size: 1.25em;
+}
+.row-content {
+    width: 60%;
+    border-left: solid var(--primary-color);
+    margin-left: 10px;
+    padding-left: 20px;
+}
+.row h2 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+    padding-right: 15px;
+    text-align: right;
+}
+
+.row-content ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 80px;
+}
+
+
+.row-content ul li a {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    font-size: 1.25em;
+    color: var(--secondary-color);
+    border-bottom: 3px solid;
+    border-color: var(--primary-color);
+    padding-bottom: 5px;
+    margin: 10px;
+}
+.about-me img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.run-buddy {
+    
+    border: solid var(--primary-color);
+    margin-left: 10px;
+    position: relative;
+    min-height: 400px;
+    /* padding: 50px 10px 20px 10px; */
+    
+}
+
+.construction-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-top: 20px;
+    justify-content: space-between;
+    /*try using flex: 1 1 30%?*/
+}
+
+.under-construction {
+    display: inline-flex;
+    border: solid var(--primary-color);
+    position: relative;
+    width: 49%;
+    min-height: 200px;
+    margin-bottom: 15px;
+    
+}
+
+.work-info img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.75;
+}
+
+.workbox {
+    
+    position: absolute; 
+    bottom: 10%;
+    justify-content: left;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    min-width: 10%;
+    opacity: 1;
+    z-index: 9999;
+}
+
+.link:hover {
+    opacity: 1;
+}
+
+.work-info h4 {
+    font-size: 12px;
+}
+
+.link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/*Fun little easter egg below*/
+.hide-me {
+    display: none;
+
+}
+
+.fun:hover + .hide-me {
+    display: block;
+}
+
+/*Media Query Section - Must be Last in List*/
+
+
+/* Media query for tablets and smaller */
+@media screen and (max-width: 768px) {
+    .hero h2 {
+        font-size: 5vw;
+    }
+
+    .hero-box {
+        position: absolute;
+        padding: 0px;
+    }
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .row-header {
+        width: 100%; 
+    }
+
+    .row-content {
+        width: 100%;
+        border-top: solid var(--primary-color);
+        border-left: none;
+        margin: 10px 0px 0px 0px;
+        padding: 20px 0px 0px 0px;
+    }
+    
+    .row h2 {
+        font-weight: bold;
+        font-size: 36px;
+        color: var(--primary-color);
+        text-align: center;
+    }
+
+}
