@@ -1,7 +1,9 @@
 import React from "react";
 import Nav from "../Nav";
 
-function Header() {
+function Header(props) {
+  const { sections = [], setCurrentSection, currentSection } = props;
+
   return (
     <header>
       <div className="Header-Box">
@@ -10,7 +12,11 @@ function Header() {
         </h1>
       </div>
 
-      <Nav></Nav>
+      <Nav
+        sections={sections}
+        setCurrentSection={setCurrentSection}
+        currentSection={currentSection}
+      ></Nav>
     </header>
   );
 }

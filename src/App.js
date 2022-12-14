@@ -17,7 +17,11 @@ function App() {
 
   return (
     <div className="App">
-      <Header></Header>
+      <Header
+        sections={sections}
+        setCurrentSection={setCurrentSection}
+        currentSection={currentSection}
+      ></Header>
 
       <About currentSection={currentSection}></About>
 
