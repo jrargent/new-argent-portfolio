@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/new-argent-portfolio/static/css/main.8cb53180.css",
+    "main.js": "/new-argent-portfolio/static/js/main.8ec9868d.js",
+    "static/js/787.804e4620.chunk.js": "/new-argent-portfolio/static/js/787.804e4620.chunk.js",
+    "static/media/Potential-Background1.jpg": "/new-argent-portfolio/static/media/Potential-Background1.42e57161914ae04075a0.jpg",
+    "static/media/Headshot.png": "/new-argent-portfolio/static/media/Headshot.5d235b30357b2f7f0494.png",
+    "index.html": "/new-argent-portfolio/index.html",
+    "main.8cb53180.css.map": "/new-argent-portfolio/static/css/main.8cb53180.css.map",
+    "main.8ec9868d.js.map": "/new-argent-portfolio/static/js/main.8ec9868d.js.map",
+    "787.804e4620.chunk.js.map": "/new-argent-portfolio/static/js/787.804e4620.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8cb53180.css",
+    "static/js/main.8ec9868d.js"
+  ]
+}
