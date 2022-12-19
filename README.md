@@ -1,9 +1,18 @@
 # New Argent Portfolio
 
+Challenge still under construction. I will complete this during the break between Christmas and New Year's.
+
+To be Completed:
+
+- Redo all styling, changing from static css to a framework like Bulma or another
+- Add contact component
+- Add resume component (and resume download)
+- Update Footer to include icons and links to github, etc.
+- Update Portfolio links and linked images to look nicer/have better hover effects
+
 ## Description
 
 I was tasked with recreating my portfolio page using React. This portfolio showcases my ability work with the React framework as well as other modules and tools.
-
 
 ## Acceptance Criteria
 
@@ -32,5 +41,5 @@ THEN I receive a notification if I have entered an invalid email address
 WHEN I am presented with the Resume section
 THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
 WHEN I view the footer
-THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter) 
+THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
 ```
