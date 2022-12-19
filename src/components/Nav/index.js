@@ -25,23 +25,6 @@ function Nav(props) {
         ))}
       </ul>
     </nav>
-    // <nav className="primary-border">
-    //   <ul>
-    //     <li className="">
-    //       <a href="#about"
-    //       onClick={() => setCurrentSection("")}>About Me</a>
-    //     </li>
-    //     <li>
-    //       <a href="#my-work">Work</a>
-    //     </li>
-    //     <li>
-    //       <a href="#contact-me">Contact Me</a>
-    //     </li>
-    //     <li>
-    //       <a href="#my-resume">Resume</a>
-    //     </li>
-    //   </ul>
-    // </nav>
   );
 }
 

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import About from "./components/About";
 import Header from "./components/Header";
+import Portfolio from "./components/Portfolio";
 
 function App() {
   const [sections] = useState([
@@ -24,9 +25,10 @@ function App() {
       ></Header>
 
       <About currentSection={currentSection}></About>
+      <Portfolio currentSection={currentSection}></Portfolio>
 
       {/*
-      <Project />
+      
       <Footer /> 
       Placeholders*/}
     </div>
