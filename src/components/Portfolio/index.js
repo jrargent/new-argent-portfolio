@@ -2,6 +2,8 @@ import React from "react";
 import runbuddy from "../../assets/images/run-buddy-screenshot.png";
 import Inspired from "../../assets/images/Inspired-Recipe.png";
 import Jobtracker from "../../assets/images/job_tracker.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function Portfolio({ currentSection }) {
   const { name } = currentSection;
@@ -21,7 +23,11 @@ function Portfolio({ currentSection }) {
                 <h4>HTML/CSS</h4>
               </div>
               {/* <!--Having the image inside the a tag lets the image be the link--> */}
-              <a href="https://jrargent.github.io/run-buddy/" target="_blank">
+              <a
+                href="https://jrargent.github.io/run-buddy/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   src={runbuddy}
                   alt="screenshot of runbuddy website"
@@ -34,16 +40,23 @@ function Portfolio({ currentSection }) {
             <div className="construction-row">
               <div className="under-construction">
                 <div className="workbox">
-                  <h3>The Inspired Recipe (Group Project)</h3>
-                  <h4>JavaScript/jQuery/Bulma CSS</h4>
+                  <a
+                    href="https://jrargent.github.io/The-Inspired-Recipe/"
+                    target="blank"
+                  >
+                    <h3>The Inspired Recipe (Group Project)</h3>
+                  </a>
+                  <a
+                    href="https://github.com/jrargent/The-Inspired-Recipe"
+                    target="blank"
+                  >
+                    <h4>JavaScript/jQuery/Bulma CSS</h4>{" "}
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
                 </div>
                 {/* <!--Having the image inside the a tag lets the image be the link--> */}
-                <a
-                  href="https://bslockhart.github.io/The-Inspired-Recipe/"
-                  target="blank"
-                >
-                  <img src={Inspired} alt="" className="link" />
-                </a>
+
+                <img src={Inspired} alt="" className="link" />
               </div>
 
               {/* <!--Add image to box for under construction--> */}
