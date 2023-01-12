@@ -1,14 +1,15 @@
-import React from "react";
-import runbuddy from "../../assets/images/run-buddy-screenshot.png";
-import Inspired from "../../assets/images/Inspired-Recipe.png";
-import Jobtracker from "../../assets/images/job_tracker.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import React from 'react';
+import runbuddy from '../../assets/images/run-buddy-screenshot.png';
+import Inspired from '../../assets/images/Inspired-Recipe.png';
+import Jobtracker from '../../assets/images/job_tracker.jpg';
+import Monied from '../../assets/images/Monied-screenshot.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 function Portfolio({ currentSection }) {
   const { name } = currentSection;
 
-  if (name === "Portfolio") {
+  if (name === 'Portfolio') {
     return (
       <section id="my-work" className="work-info">
         <div className="row">
@@ -19,21 +20,24 @@ function Portfolio({ currentSection }) {
           <div className="row-content">
             <div className="run-buddy">
               <div className="workbox">
-                <h3>Run Buddy</h3>
-                <h4>HTML/CSS</h4>
+                <a
+                  href="https://jrargent.github.io/run-buddy/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <h3>Run Buddy</h3>
+                  <h4>HTML/CSS</h4>
+                </a>
+                <a href="https://github.com/jrargent/run-buddy" target="blank">
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
               </div>
-              {/* <!--Having the image inside the a tag lets the image be the link--> */}
-              <a
-                href="https://jrargent.github.io/run-buddy/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src={runbuddy}
-                  alt="screenshot of runbuddy website"
-                  className="link"
-                />
-              </a>
+
+              <img
+                src={runbuddy}
+                alt="screenshot of the runbuddy website"
+                className="link"
+              />
             </div>
 
             {/* <!--Add image to box for under construction--> */}
@@ -45,16 +49,15 @@ function Portfolio({ currentSection }) {
                     target="blank"
                   >
                     <h3>The Inspired Recipe (Group Project)</h3>
+                    <h4>JavaScript/jQuery/Bulma CSS</h4>{' '}
                   </a>
                   <a
                     href="https://github.com/jrargent/The-Inspired-Recipe"
                     target="blank"
                   >
-                    <h4>JavaScript/jQuery/Bulma CSS</h4>{" "}
                     <FontAwesomeIcon icon={faGithub} />
                   </a>
                 </div>
-                {/* <!--Having the image inside the a tag lets the image be the link--> */}
 
                 <img src={Inspired} alt="" className="link" />
               </div>
@@ -62,16 +65,21 @@ function Portfolio({ currentSection }) {
               {/* <!--Add image to box for under construction--> */}
               <div className="under-construction">
                 <div className="workbox">
-                  <h3>Job Tracker (Group Project)</h3>
-                  <h4>Node/Express/Handlebars/MVC</h4>
+                  <a
+                    href="https://thebestjobtracker.herokuapp.com/login"
+                    target="blank"
+                  >
+                    <h3>Job Tracker (Group Project)</h3>
+                    <h4>Node/Express/Handlebars/MVC</h4>
+                  </a>
+                  <a
+                    href="https://github.com/william-chalk/Job-Tracker"
+                    target="blank"
+                  >
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
                 </div>
-                {/* <!--Having the image inside the a tag lets the image be the link--> */}
-                <a
-                  href="https://thebestjobtracker.herokuapp.com/login"
-                  target="blank"
-                >
-                  <img src={Jobtracker} alt="" className="link" />
-                </a>
+                <img src={Jobtracker} alt="" className="link" />
               </div>
 
               {/* <!--Add image to box for under construction--> */}
@@ -80,7 +88,7 @@ function Portfolio({ currentSection }) {
                   <h3>Under Construction</h3>
                   <h4>MERN Stack</h4>
                 </div>
-                {/* <!--Having the image inside the a tag lets the image be the link--> */}
+
                 <a href="#" target="blank">
                   <img
                     src="./assets/images/Drop_spindle_with_wool.jpg"
@@ -93,17 +101,23 @@ function Portfolio({ currentSection }) {
               {/* <!--Add image to box for under construction--> */}
               <div className="under-construction">
                 <div className="workbox">
-                  <h3>Under Construction</h3>
-                  <h4>MERN Stack</h4>
+                  <a
+                    href="https://aqueous-scrubland-12058.herokuapp.com/"
+                    target="blank"
+                  >
+                    <h3>
+                      Monied: A Charity Crowdsourcing Website(Group Project)
+                    </h3>
+                    <h4>MERN Stack</h4>
+                  </a>
+                  <a
+                    href="https://github.com/kristacannady/Monied"
+                    target="blank"
+                  >
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
                 </div>
-                {/* <!--Having the image inside the a tag lets the image be the link--> */}
-                <a href="#" target="blank">
-                  <img
-                    src="./assets/images/Potential-Background.jpg"
-                    alt=""
-                    className="link"
-                  />
-                </a>
+                <img src={Monied} alt="" className="link" />
               </div>
             </div>
           </div>
