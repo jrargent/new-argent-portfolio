@@ -116,13 +116,13 @@ footer h3 {
   /*Add font-size 5vw for media query for this on small screens*/
 }
 
-.row {
+/* .row {
   display: flex;
   flex-wrap: wrap;
   /* justify-content: center; */
-  align-items: flex-start;
+  /* align-items: flex-start;
   padding: 25px 15px;
-}
+} */ 
 
 
 .row-header {
@@ -133,7 +133,7 @@ p {
   font-size: 1.25em;
 }
 .row-content {
-  width: 60%;
+ 
   border-top: solid var(--primary-color);
   margin-top: 10px;
   padding-top: 20px;
@@ -146,13 +146,13 @@ p {
   text-align: right;
 }
 
-#about {
+/* #about {
   font-weight: bold;
   font-size: 48px;
   color: var(--primary-color);
   padding-right: 15px;
   text-align: center;
-}
+} */
 
 .row-content ul {
   list-style: none;
@@ -175,10 +175,10 @@ p {
   padding-bottom: 5px;
   margin: 10px;
 }
-.about-me img {
+/* .about-me img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 
 .run-buddy {
