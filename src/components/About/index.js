@@ -1,10 +1,11 @@
-import React from "react";
-import headshot from "../../assets/images/Headshot.png";
+import React from 'react';
+import headshot from '../../assets/images/Headshot.png';
+import Button from 'react-bootstrap/Button';
 
 function About({ currentSection }) {
   const { name } = currentSection;
 
-  if (name === "About Me") {
+  if (name === 'About Me') {
     return (
       <section>
         <h1 id="about">About Me</h1>
@@ -22,6 +23,7 @@ function About({ currentSection }) {
             detail-oriented nature of textiles translates well to the modern
             craft of coding.
             <br />
+            <Button variant="outline-success">Close me y'all!</Button>
             <br />
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Repellendus, aliquid officia laborum, sapiente impedit consectetur

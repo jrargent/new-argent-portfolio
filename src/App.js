@@ -1,18 +1,19 @@
-import React, { useState } from "react";
-import About from "./components/About";
-import Header from "./components/Header";
-import Portfolio from "./components/Portfolio";
-import Footer from "./components/Footer";
+import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import About from './components/About';
+import Header from './components/Header';
+import Portfolio from './components/Portfolio';
+import Footer from './components/Footer';
 
 function App() {
   const [sections] = useState([
     {
-      name: "About Me",
+      name: 'About Me',
     },
-    { name: "Portfolio" },
-    { name: "Contact" },
+    { name: 'Portfolio' },
+    { name: 'Contact' },
     {
-      name: "Resume",
+      name: 'Resume',
     },
   ]);
   const [currentSection, setCurrentSection] = useState(sections[0]);
