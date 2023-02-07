@@ -27,14 +27,14 @@ header h1 {
   padding-left: 20px;
 }
 
-.Header-Box {
+/* .Header-Box {
   display: flex;
   flex-wrap: wrap;
   flex: 0 1 30%;
   background-color: var(--primary-color);
   margin: 10px 10px 10px 0px;
   padding-left: 15px;
-}
+} */
 
 header a {
   text-decoration: none;
