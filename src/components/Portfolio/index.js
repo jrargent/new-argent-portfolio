@@ -149,8 +149,29 @@ function Portfolio({ currentSection }) {
                               Modal Heading
                             </Modal.Title>
                           </Modal.Header>
-                          <Modal.Body>
-                            Woohoo, you're reading this text in a modal!
+                          <Modal.Body className="show-grid">
+                            <Container>
+                              <Row>
+                                <Col xs={12} md={8}>
+                                  .col-xs-12 .col-md-8
+                                </Col>
+                                <Col xs={6} md={4}>
+                                  .col-xs-6 .col-md-4
+                                </Col>
+                              </Row>
+
+                              <Row>
+                                <Col xs={6} md={4}>
+                                  .col-xs-6 .col-md-4
+                                </Col>
+                                <Col xs={6} md={4}>
+                                  .col-xs-6 .col-md-4
+                                </Col>
+                                <Col xs={6} md={4}>
+                                  .col-xs-6 .col-md-4
+                                </Col>
+                              </Row>
+                            </Container>
                           </Modal.Body>
                           <Modal.Footer>
                             <Button variant="secondary" onClick={handleClose}>

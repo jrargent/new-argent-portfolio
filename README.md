@@ -1,14 +1,15 @@
 # New Argent Portfolio
 
-Challenge still under construction. I will complete this during the break between Christmas and New Year's.
+Portfolio is still under construction
 
 To be Completed:
 
-- Redo all styling, changing from static css to a framework like Bulma or another
+- Complete styling re-work from vanilla CSS to Bootstrap and React-bootstrap
 - Add contact component
 - Add resume component (and resume download)
-- Update Footer to include icons and links to github, etc.
-- Update Portfolio links and linked images to look nicer/have better hover effects
+- Update Footer to include icons and links to github and linkedin
+- Finish adding JavaScript projects to portfolio album page. Continue adding modals for projects
+  - Modals will give more information about a project, or the project itself if small (e.g. fizzbuzz, palindrome checker), as well as provide a code snippit if applicable
 
 ## Description
 
