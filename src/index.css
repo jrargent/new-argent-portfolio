@@ -138,13 +138,13 @@ p {
   margin-top: 10px;
   padding-top: 20px;
 }
-.row h1 {
+/* .row h1 {
   font-weight: bold;
   font-size: 48px;
   color: var(--primary-color);
   padding-right: 15px;
   text-align: right;
-}
+} */
 
 /* #about {
   font-weight: bold;
