@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { CodeBlock, monokai } from 'react-code-blocks';
 import Container from 'react-bootstrap/Container';
 import runbuddy from '../../assets/images/run-buddy-screenshot.png';
 import Inspired from '../../assets/images/Inspired-Recipe.png';
@@ -11,10 +12,13 @@ import { Col, Row, Button, Nodal, Modal } from 'react-bootstrap';
 function Portfolio({ currentSection }) {
   const { name } = currentSection;
 
-  const [show, setShow] = useState(false);
+  const [thirdShow, setThirdShow] = useState(false); // add new useState line for each new modal
+  const [fourthShow, setFourthShow] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const code = function add(a, b) {
+    var sum = a + b;
+    console.log(sum);
+  };
 
   if (name === 'Portfolio') {
     return (
@@ -27,7 +31,7 @@ function Portfolio({ currentSection }) {
         <div className="album py-5">
           <Container fluid>
             <Row className="row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-              {/* first project */}
+              {/* First project */}
               <Col>
                 <div className="card shadow-sm">
                   <img
@@ -123,7 +127,7 @@ function Portfolio({ currentSection }) {
                         <Button
                           variant="light"
                           className=" btn btn-sm btn-outline-secondary"
-                          onClick={handleShow}
+                          onClick={() => setThirdShow(true)}
                         >
                           Take a closer look
                         </Button>
@@ -138,14 +142,14 @@ function Portfolio({ currentSection }) {
 
                         {/* Modal */}
                         <Modal
-                          show={show}
-                          onHide={handleClose}
+                          show={thirdShow}
+                          onHide={() => setThirdShow(false)}
                           size="lg"
                           aria-labelledby="contained-modal-title-vcenter"
                           centered
                         >
                           <Modal.Header closeButton>
-                            <Modal.Title id="contained-modal-title-vcenter">
+                            <Modal.Title className="contained-modal-title-vcenter">
                               Modal Heading
                             </Modal.Title>
                           </Modal.Header>
@@ -174,7 +178,91 @@ function Portfolio({ currentSection }) {
                             </Container>
                           </Modal.Body>
                           <Modal.Footer>
-                            <Button variant="secondary" onClick={handleClose}>
+                            <Button
+                              variant="secondary"
+                              onClick={() => setThirdShow(false)}
+                            >
+                              Close
+                            </Button>
+                          </Modal.Footer>
+                        </Modal>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Col>
+              {/*Fourth project*/}
+              <Col>
+                <div className="card shadow-sm">
+                  <div className="card-title">
+                    <CodeBlock
+                      text={code}
+                      theme={monokai}
+                      showLineNumbers
+                      wrapLines
+                      language={'javascript'}
+                    />
+                  </div>
+
+                  <div className="card-body">
+                    <p className="card-text">
+                      Example for using CodeBlock react module. To be updated to
+                      actual code.
+                    </p>
+                    <div className="d-flex justify-content-between align-items-center">
+                      <div className="btn-group">
+                        <Button
+                          variant="light"
+                          className=" btn btn-sm btn-outline-secondary"
+                          onClick={() => setFourthShow(true)}
+                        >
+                          Take a closer look
+                        </Button>
+                        <a
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                          href="https://github.com/william-chalk/Job-Tracker"
+                          target="blank"
+                        >
+                          GitHub <FontAwesomeIcon icon={faGithub} />
+                        </a>
+
+                        {/* Modal */}
+                        <Modal
+                          show={fourthShow}
+                          onHide={() => setFourthShow(false)}
+                          size="lg"
+                          aria-labelledby="contained-modal-title-vcenter"
+                          centered
+                        >
+                          <Modal.Header closeButton>
+                            <Modal.Title className="contained-modal-title-vcenter">
+                              JavaScript Code Snippet
+                            </Modal.Title>
+                          </Modal.Header>
+                          <Modal.Body>
+                            <Container>
+                              <Row>
+                                <Col xs={12} md={8}>
+                                  <CodeBlock
+                                    text={code}
+                                    theme={monokai}
+                                    wrapLines
+                                    customStyle={{
+                                      height: '200px',
+                                      overflowY: 'scroll',
+                                    }}
+                                    language={'javascript'}
+                                  />
+                                </Col>
+                              </Row>
+                            </Container>
+                          </Modal.Body>
+                          <Modal.Footer>
+                            <Button
+                              variant="secondary"
+                              onClick={() => setFourthShow(false)}
+                            >
                               Close
                             </Button>
                           </Modal.Footer>
