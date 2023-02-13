@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { CodeBlock, monokai } from 'react-code-blocks';
+import $ from 'jquery';
+import OddOrEven from '../OddOrEven';
+import { code1, code2 } from '../OddOrEven/code';
 import Container from 'react-bootstrap/Container';
 import runbuddy from '../../assets/images/run-buddy-screenshot.png';
 import Inspired from '../../assets/images/Inspired-Recipe.png';
@@ -14,11 +17,6 @@ function Portfolio({ currentSection }) {
 
   const [thirdShow, setThirdShow] = useState(false); // add new useState line for each new modal
   const [fourthShow, setFourthShow] = useState(false);
-
-  const code = function add(a, b) {
-    var sum = a + b;
-    console.log(sum);
-  };
 
   if (name === 'Portfolio') {
     return (
@@ -37,11 +35,11 @@ function Portfolio({ currentSection }) {
                   <img
                     src={runbuddy}
                     alt="screenshot of the runbuddy website"
-                    className="card-img-top"
+                    className="card-img-top img-responsive"
                   />
 
                   <div class="card-body">
-                    <p class="card-text">
+                    <p class="card-text align-bottom">
                       Run Buddy is a website created using HTML5 and CSS. This
                       was my first project in my coding bootcamp.
                     </p>
@@ -150,7 +148,7 @@ function Portfolio({ currentSection }) {
                         >
                           <Modal.Header closeButton>
                             <Modal.Title className="contained-modal-title-vcenter">
-                              Modal Heading
+                              Title
                             </Modal.Title>
                           </Modal.Header>
                           <Modal.Body className="show-grid">
@@ -196,7 +194,7 @@ function Portfolio({ currentSection }) {
                 <div className="card shadow-sm">
                   <div className="card-title">
                     <CodeBlock
-                      text={code}
+                      text={code1}
                       theme={monokai}
                       showLineNumbers
                       wrapLines
@@ -206,8 +204,8 @@ function Portfolio({ currentSection }) {
 
                   <div className="card-body">
                     <p className="card-text">
-                      Example for using CodeBlock react module. To be updated to
-                      actual code.
+                      Small JavaScript applet to determine if a number is odd or
+                      even.
                     </p>
                     <div className="d-flex justify-content-between align-items-center">
                       <div className="btn-group">
@@ -218,14 +216,6 @@ function Portfolio({ currentSection }) {
                         >
                           Take a closer look
                         </Button>
-                        <a
-                          type="button"
-                          class="btn btn-sm btn-outline-secondary"
-                          href="https://github.com/william-chalk/Job-Tracker"
-                          target="blank"
-                        >
-                          GitHub <FontAwesomeIcon icon={faGithub} />
-                        </a>
 
                         {/* Modal */}
                         <Modal
@@ -237,7 +227,8 @@ function Portfolio({ currentSection }) {
                         >
                           <Modal.Header closeButton>
                             <Modal.Title className="contained-modal-title-vcenter">
-                              JavaScript Code Snippet
+                              Odd or Even Number?
+                              <OddOrEven></OddOrEven>
                             </Modal.Title>
                           </Modal.Header>
                           <Modal.Body>
@@ -245,7 +236,7 @@ function Portfolio({ currentSection }) {
                               <Row>
                                 <Col xs={12} md={8}>
                                   <CodeBlock
-                                    text={code}
+                                    text={code2}
                                     theme={monokai}
                                     wrapLines
                                     customStyle={{

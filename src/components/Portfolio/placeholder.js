@@ -131,3 +131,15 @@ function Portfolio({ currentSection }) {
 }
 
 //export default Portfolio;
+
+// add input ability to little code snippet.
+
+<button onClick={oddOrEven(num)}></button>;
+
+var oddOrEven = function (num) {
+  if (num % 2 === 0) {
+    return 'even';
+  } else {
+    return 'odd';
+  }
+};
