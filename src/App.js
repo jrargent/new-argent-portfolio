@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import About from './components/About';
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
 
       <About currentSection={currentSection}></About>
       <Portfolio currentSection={currentSection}></Portfolio>
+      <Contact currentSection={currentSection}></Contact>
       <Footer></Footer>
 
       {/*

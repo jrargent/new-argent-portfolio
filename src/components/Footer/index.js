@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faCopy, faCopyright } from '@fortawesome/free-regular-svg-icons';
 // import icons for github, linked in, and uhhhh
 
 function Footer() {
@@ -19,7 +20,9 @@ function Footer() {
   return (
     <footer>
       <div className="justify-content-center">
-        <h4 className="fun">Argent Made This</h4>
+        <h4 className="fun">
+          Argent Made This, <FontAwesomeIcon icon={faCopyright} /> 2023
+        </h4>
         <div className="btn-group">
           <a
             type="button"
