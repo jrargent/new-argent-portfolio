@@ -73,7 +73,7 @@ nav  li {
   cursor: pointer;
 }
 
-footer h3 {
+footer h4 {
   font-weight: lighter;
   font-style: italic;
 }
@@ -251,15 +251,10 @@ p {
   left: 0;
 }
 
-/*Fun little easter egg below*/
-.hide-me {
-  display: none;
 
-}
 
-.fun:hover + .hide-me {
-  display: block;
-}
+
+
 
 /*Media Query Section - Must be Last in List*/
 
