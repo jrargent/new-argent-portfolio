@@ -21,20 +21,25 @@ function OddOrEven() {
   };
 
   return (
-    <div className="container mt-4" id="snippet">
-      <form>
-        <label for="number">Enter a number: </label>
-        <input type="number" name="numget" id="formget" />
-        <button
-          className=" btn btn-primary"
-          id="getNumber"
-          type="button"
-          onClick={getTheNumber}
-        >
-          Check Number
-        </button>
-        <p id="results"></p>
-      </form>
+    <div className="container mt-4">
+      <div className="row" id="snippet">
+        <form className="align-items-center">
+          <label for="number">Enter a number: </label>
+
+          <input type="number" name="numget" id="formget" className="mx-2" />
+
+          <button
+            className=" btn btn-primary "
+            id="getNumber"
+            type="button"
+            onClick={getTheNumber}
+          >
+            Check Number
+          </button>
+
+          <p id="results"></p>
+        </form>
+      </div>
     </div>
   );
 }

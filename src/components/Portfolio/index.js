@@ -31,7 +31,7 @@ function Portfolio({ currentSection }) {
             <Row className="row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
               {/* First project */}
               <Col>
-                <div className="card shadow-sm">
+                <div className="card shadow-sm h-100">
                   <img
                     src={runbuddy}
                     alt="screenshot of the runbuddy website"
@@ -69,11 +69,11 @@ function Portfolio({ currentSection }) {
               </Col>
               {/* Second project */}
               <Col>
-                <div className="card shadow-sm">
+                <div className="card shadow-sm h-100 jobtracker">
                   <img
                     src={Inspired}
                     alt="screenshot of the Inspired Chef website"
-                    className="card-img-top"
+                    className="card-img-top img-responsive"
                   />
 
                   <div class="card-body">
@@ -107,11 +107,11 @@ function Portfolio({ currentSection }) {
               </Col>
               {/* Third project */}
               <Col>
-                <div className="card shadow-sm">
+                <div className="card shadow-sm h-100 jobtracker">
                   <img
                     src={Jobtracker}
                     alt="screenshot of the jobtracker website"
-                    className="card-img-top"
+                    className="card-img-top img-responsive"
                   />
 
                   <div className="card-body">
@@ -233,14 +233,15 @@ function Portfolio({ currentSection }) {
                           </Modal.Header>
                           <Modal.Body>
                             <Container>
-                              <Row>
-                                <Col xs={12} md={8}>
+                              <Row className="justify-content-center">
+                                <Col xs={12} md={8} lg={11}>
                                   <CodeBlock
                                     text={code2}
                                     theme={monokai}
                                     wrapLines
                                     customStyle={{
                                       height: '200px',
+                                      width: '100%',
                                       overflowY: 'scroll',
                                     }}
                                     language={'javascript'}

@@ -210,12 +210,18 @@ p {
   
 }
 
-/* .work-info img {
+.work-info img {
   object-fit: cover;
-  height: 100%;
+  height: 200px;
   width: 100%;
-  opacity: 0.75;
-} */
+  
+}
+
+.jobtracker img {
+  object-fit: contain;
+  height: 200px;
+  width: auto;
+}
 
 .workbox {
   
