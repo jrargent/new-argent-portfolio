@@ -4,6 +4,7 @@ import About from './components/About';
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import Resume from './components/Resume';
 import Footer from './components/Footer';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <About currentSection={currentSection}></About>
       <Portfolio currentSection={currentSection}></Portfolio>
       <Contact currentSection={currentSection}></Contact>
+      <Resume currentSection={currentSection}></Resume>
       <Footer></Footer>
 
       {/*
