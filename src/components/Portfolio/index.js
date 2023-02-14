@@ -122,13 +122,15 @@ function Portfolio({ currentSection }) {
                     </p>
                     <div className="d-flex justify-content-between align-items-center">
                       <div className="btn-group">
-                        <Button
-                          variant="light"
-                          className=" btn btn-sm btn-outline-secondary"
-                          onClick={() => setThirdShow(true)}
+                        <a
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                          href="https://jrargent.github.io/The-Inspired-Recipe/"
+                          target="_blank"
+                          rel="noreferrer"
                         >
-                          Take a closer look
-                        </Button>
+                          View Website
+                        </a>
                         <a
                           type="button"
                           class="btn btn-sm btn-outline-secondary"
