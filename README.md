@@ -4,10 +4,7 @@ Portfolio is still under construction
 
 To be Completed:
 
-- Complete styling re-work from vanilla CSS to Bootstrap and React-bootstrap
-- Add contact component
-- Add resume component (and resume download)
-- Update Footer to include icons and links to github and linkedin
+- Update Contact component with EmailJS form. Switch from mailto link to a fillable form that will send via EmailJS node module.
 - Finish adding JavaScript projects to portfolio album page. Continue adding modals for projects
   - Modals will give more information about a project, or the project itself if small (e.g. fizzbuzz, palindrome checker), as well as provide a code snippit if applicable
 
