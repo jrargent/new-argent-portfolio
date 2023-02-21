@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/new-argent-portfolio/static/css/main.b06d01c0.css",
-    "main.js": "/new-argent-portfolio/static/js/main.f673bb2b.js",
+    "main.js": "/new-argent-portfolio/static/js/main.5c3251eb.js",
     "react-syntax-highlighter/refractor-core-import.js": "/new-argent-portfolio/static/js/react-syntax-highlighter/refractor-core-import.f34bd13e.chunk.js",
     "react-syntax-highlighter_languages_refractor_abap.js": "/new-argent-portfolio/static/js/react-syntax-highlighter_languages_refractor_abap.bce46337.chunk.js",
     "react-syntax-highlighter_languages_refractor_actionscript.js": "/new-argent-portfolio/static/js/react-syntax-highlighter_languages_refractor_actionscript.9b27319a.chunk.js",
@@ -164,7 +164,7 @@
     "static/media/job_tracker.jpg": "/new-argent-portfolio/static/media/job_tracker.0aa3fcca2a21a28305a4.jpg",
     "index.html": "/new-argent-portfolio/index.html",
     "main.b06d01c0.css.map": "/new-argent-portfolio/static/css/main.b06d01c0.css.map",
-    "main.f673bb2b.js.map": "/new-argent-portfolio/static/js/main.f673bb2b.js.map",
+    "main.5c3251eb.js.map": "/new-argent-portfolio/static/js/main.5c3251eb.js.map",
     "refractor-core-import.f34bd13e.chunk.js.map": "/new-argent-portfolio/static/js/react-syntax-highlighter/refractor-core-import.f34bd13e.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_abap.bce46337.chunk.js.map": "/new-argent-portfolio/static/js/react-syntax-highlighter_languages_refractor_abap.bce46337.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_actionscript.9b27319a.chunk.js.map": "/new-argent-portfolio/static/js/react-syntax-highlighter_languages_refractor_actionscript.9b27319a.chunk.js.map",
@@ -321,6 +321,6 @@
   },
   "entrypoints": [
     "static/css/main.b06d01c0.css",
-    "static/js/main.f673bb2b.js"
+    "static/js/main.5c3251eb.js"
   ]
 }
