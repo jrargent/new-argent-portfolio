@@ -27,19 +27,19 @@ function About({ currentSection }) {
           <div className="row justify-content-center">
             <div className="col col-10 mt-4">
               <p>
-                I come to the coding world from a bit of a different background.
-                I am an ancient and medieval textiles enthusiast and a member of
-                the Society for Creative Anachronism, where I interpret and
-                bring to life the history of spinning, weaving, and natural
-                dyeing. The detail-oriented nature of textiles translates well
-                to the modern craft of coding.
+                My name is Argent and I am a full-stack JavaScript Web Developer
+                with experience in customer support, training and instruction,
+                account management, and technical support. I come to the coding
+                world from a bit of a different background. I am an
+                ancient/medieval textiles enthusiast and a member of the Society
+                for Creative Anachronism, where I interpret and bring to life
+                the history of spinning, weaving, and natural dyeing. The
+                detail-oriented nature of textiles translates well to the modern
+                craft of coding.
                 <br />
-                <br />
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Repellendus, aliquid officia laborum, sapiente impedit
-                consectetur veritatis dolore aspernatur sed expedita quod
-                reiciendis praesentium quos adipisci corrupti odit possimus?
-                Eius, deleniti?
+                <br />I am proficient in JavaScript (ES6), Express and Node.js,
+                React, HTML, and CSS. I am currently developing my skills in C#
+                and .NET.
               </p>
             </div>
           </div>
