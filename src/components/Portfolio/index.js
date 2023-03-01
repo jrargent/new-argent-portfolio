@@ -232,8 +232,8 @@ function Portfolio({ currentSection }) {
                   <div className="card-body">
                     <p className="card-text">
                       Tech-Blog was a homework for the MVC module of coding
-                      bootcamp. It used Node,Express,Handlebars, and uses MVC
-                      principles.
+                      bootcamp. It used Node,Express,Handlebars, Bootstrap, and
+                      uses MVC principles.
                     </p>
                     <div className="d-flex justify-content-between align-items-center">
                       <div className="btn-group">
