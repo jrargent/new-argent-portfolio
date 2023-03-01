@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/new-argent-portfolio/static/css/main.b06d01c0.css",
-    "main.js": "/new-argent-portfolio/static/js/main.5c3251eb.js",
+    "main.js": "/new-argent-portfolio/static/js/main.6437dec0.js",
     "react-syntax-highlighter/refractor-core-import.js": "/new-argent-portfolio/static/js/react-syntax-highlighter/refractor-core-import.f34bd13e.chunk.js",
     "react-syntax-highlighter_languages_refractor_abap.js": "/new-argent-portfolio/static/js/react-syntax-highlighter_languages_refractor_abap.bce46337.chunk.js",
     "react-syntax-highlighter_languages_refractor_actionscript.js": "/new-argent-portfolio/static/js/react-syntax-highlighter_languages_refractor_actionscript.9b27319a.chunk.js",
@@ -160,11 +160,12 @@
     "static/media/Headshot.png": "/new-argent-portfolio/static/media/Headshot.5d235b30357b2f7f0494.png",
     "static/media/Inspired-Recipe.png": "/new-argent-portfolio/static/media/Inspired-Recipe.cd4d311897669ab579bd.png",
     "static/media/Monied-screenshot.png": "/new-argent-portfolio/static/media/Monied-screenshot.c578d514678aaa444c55.png",
+    "static/media/Tech-Blog.png": "/new-argent-portfolio/static/media/Tech-Blog.ff8a7a1a4051bc1f4e62.png",
     "static/media/Jennifer Argent Resume - Formatted.docx": "/new-argent-portfolio/static/media/Jennifer Argent Resume - Formatted.f3f1b54fcb553ee16056.docx",
     "static/media/job_tracker.jpg": "/new-argent-portfolio/static/media/job_tracker.0aa3fcca2a21a28305a4.jpg",
     "index.html": "/new-argent-portfolio/index.html",
     "main.b06d01c0.css.map": "/new-argent-portfolio/static/css/main.b06d01c0.css.map",
-    "main.5c3251eb.js.map": "/new-argent-portfolio/static/js/main.5c3251eb.js.map",
+    "main.6437dec0.js.map": "/new-argent-portfolio/static/js/main.6437dec0.js.map",
     "refractor-core-import.f34bd13e.chunk.js.map": "/new-argent-portfolio/static/js/react-syntax-highlighter/refractor-core-import.f34bd13e.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_abap.bce46337.chunk.js.map": "/new-argent-portfolio/static/js/react-syntax-highlighter_languages_refractor_abap.bce46337.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_actionscript.9b27319a.chunk.js.map": "/new-argent-portfolio/static/js/react-syntax-highlighter_languages_refractor_actionscript.9b27319a.chunk.js.map",
@@ -321,6 +322,6 @@
   },
   "entrypoints": [
     "static/css/main.b06d01c0.css",
-    "static/js/main.5c3251eb.js"
+    "static/js/main.6437dec0.js"
   ]
 }
