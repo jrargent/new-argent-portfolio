@@ -7,6 +7,7 @@ import Container from 'react-bootstrap/Container';
 import runbuddy from '../../assets/images/run-buddy-screenshot.png';
 import Inspired from '../../assets/images/Inspired-Recipe.png';
 import Jobtracker from '../../assets/images/job_tracker.jpg';
+import TechBlog from '../../assets/images/Tech-Blog.png';
 import Monied from '../../assets/images/Monied-screenshot.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -125,7 +126,7 @@ function Portfolio({ currentSection }) {
                         <a
                           type="button"
                           class="btn btn-sm btn-outline-secondary"
-                          href="https://jrargent.github.io/The-Inspired-Recipe/"
+                          href="https://thebestjobtracker.herokuapp.com/login"
                           target="_blank"
                           rel="noreferrer"
                         >
@@ -139,53 +140,6 @@ function Portfolio({ currentSection }) {
                         >
                           GitHub <FontAwesomeIcon icon={faGithub} />
                         </a>
-
-                        {/* Modal */}
-                        <Modal
-                          show={thirdShow}
-                          onHide={() => setThirdShow(false)}
-                          size="lg"
-                          aria-labelledby="contained-modal-title-vcenter"
-                          centered
-                        >
-                          <Modal.Header closeButton>
-                            <Modal.Title className="contained-modal-title-vcenter">
-                              Title
-                            </Modal.Title>
-                          </Modal.Header>
-                          <Modal.Body className="show-grid">
-                            <Container>
-                              <Row>
-                                <Col xs={12} md={8}>
-                                  .col-xs-12 .col-md-8
-                                </Col>
-                                <Col xs={6} md={4}>
-                                  .col-xs-6 .col-md-4
-                                </Col>
-                              </Row>
-
-                              <Row>
-                                <Col xs={6} md={4}>
-                                  .col-xs-6 .col-md-4
-                                </Col>
-                                <Col xs={6} md={4}>
-                                  .col-xs-6 .col-md-4
-                                </Col>
-                                <Col xs={6} md={4}>
-                                  .col-xs-6 .col-md-4
-                                </Col>
-                              </Row>
-                            </Container>
-                          </Modal.Body>
-                          <Modal.Footer>
-                            <Button
-                              variant="secondary"
-                              onClick={() => setThirdShow(false)}
-                            >
-                              Close
-                            </Button>
-                          </Modal.Footer>
-                        </Modal>
                       </div>
                     </div>
                   </div>
@@ -261,6 +215,45 @@ function Portfolio({ currentSection }) {
                             </Button>
                           </Modal.Footer>
                         </Modal>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Col>
+              {/* Fifth project */}
+              <Col>
+                <div className="card shadow-sm h-100">
+                  <img
+                    src={TechBlog}
+                    alt="screenshot of the Tech-Blog website"
+                    className="card-img-top img-responsive"
+                  />
+
+                  <div className="card-body">
+                    <p className="card-text">
+                      Tech-Blog was a homework for the MVC module of coding
+                      bootcamp. It used Node,Express,Handlebars, and uses MVC
+                      principles.
+                    </p>
+                    <div className="d-flex justify-content-between align-items-center">
+                      <div className="btn-group">
+                        <a
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                          href="https://tranquil-dawn-57244.herokuapp.com/"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          View Website
+                        </a>
+                        <a
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                          href="https://github.com/jrargent/Tech-Blog"
+                          target="blank"
+                        >
+                          GitHub <FontAwesomeIcon icon={faGithub} />
+                        </a>
                       </div>
                     </div>
                   </div>
