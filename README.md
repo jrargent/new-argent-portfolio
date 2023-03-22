@@ -1,12 +1,8 @@
 # New Argent Portfolio
 
-Portfolio is still under construction
+## Link to Portfolio
 
-To be Completed:
-
-- Update Contact component with EmailJS form. Switch from mailto link to a fillable form that will send via EmailJS node module.
-- Finish adding JavaScript projects to portfolio album page. Continue adding modals for projects
-  - Modals will give more information about a project, or the project itself if small (e.g. fizzbuzz, palindrome checker), as well as provide a code snippit if applicable
+https://jrargent.github.io/new-argent-portfolio/
 
 ## Description
 
@@ -41,3 +37,13 @@ THEN I see a link to a downloadable resume and a list of the developer’s profi
 WHEN I view the footer
 THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
 ```
+
+## To Complete
+
+Portfolio is still under construction
+
+To be Completed:
+
+- Update Contact component with EmailJS form. Switch from mailto link to a fillable form that will send via EmailJS node module.
+- Finish adding JavaScript projects to portfolio album page. Continue adding modals for projects
+  - Modals will give more information about a project, or the project itself if small (e.g. fizzbuzz, palindrome checker), as well as provide a code snippit if applicable

@@ -8,7 +8,7 @@ import runbuddy from '../../assets/images/run-buddy-screenshot.png';
 import Inspired from '../../assets/images/Inspired-Recipe.png';
 import Jobtracker from '../../assets/images/job_tracker.jpg';
 import TechBlog from '../../assets/images/Tech-Blog.png';
-import Monied from '../../assets/images/Monied-screenshot.png';
+import Monied from '../../assets/images/Monied2-screenshot.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Col, Row, Button, Nodal, Modal } from 'react-bootstrap';
@@ -80,7 +80,8 @@ function Portfolio({ currentSection }) {
                   <div class="card-body">
                     <p class="card-text">
                       The Inspired Chef was the first group project completed in
-                      my coding bootcamp. It used JavaScript and Bulma CSS.
+                      my coding bootcamp. It used JavaScript and the Bulma CSS
+                      framework.
                     </p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
@@ -160,8 +161,9 @@ function Portfolio({ currentSection }) {
 
                   <div className="card-body">
                     <p className="card-text">
-                      Small JavaScript applet to determine if a number is odd or
-                      even.
+                      This is a small JavaScript applet to determine if a number
+                      is odd or even. Please click the button below to test the
+                      applet.
                     </p>
                     <div className="d-flex justify-content-between align-items-center">
                       <div className="btn-group">
@@ -250,6 +252,47 @@ function Portfolio({ currentSection }) {
                           type="button"
                           class="btn btn-sm btn-outline-secondary"
                           href="https://github.com/jrargent/Tech-Blog"
+                          target="blank"
+                        >
+                          GitHub <FontAwesomeIcon icon={faGithub} />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Col>
+              {/*Sixth Project */}
+              <Col>
+                <div className="card shadow-sm h-100">
+                  <img
+                    src={Monied}
+                    alt="screenshot of the Monied website"
+                    className="card-img-top img-responsive"
+                  />
+
+                  <div className="card-body">
+                    <p className="card-text">
+                      Monied is a fundraising platform for nonprofit
+                      organizations. It is a full stack project using Node.js,
+                      Express.js, React, GraphQL, and Bootstrap. It was the
+                      final group project of Bootcamp and is one that I have
+                      continued to work on with my group after.
+                    </p>
+                    <div className="d-flex justify-content-between align-items-center">
+                      <div className="btn-group">
+                        <a
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                          href=""
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          View Website
+                        </a>
+                        <a
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                          href="https://github.com/sfhill24/Monied-2"
                           target="blank"
                         >
                           GitHub <FontAwesomeIcon icon={faGithub} />
