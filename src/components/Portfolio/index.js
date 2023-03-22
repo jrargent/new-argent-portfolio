@@ -242,7 +242,7 @@ function Portfolio({ currentSection }) {
                         <a
                           type="button"
                           class="btn btn-sm btn-outline-secondary"
-                          href="https://tranquil-dawn-57244.herokuapp.com/"
+                          href="https://argent-blogsite-practice.herokuapp.com/"
                           target="_blank"
                           rel="noreferrer"
                         >
@@ -287,7 +287,7 @@ function Portfolio({ currentSection }) {
                           target="_blank"
                           rel="noreferrer"
                         >
-                          View Website
+                          Website under Construction
                         </a>
                         <a
                           type="button"
