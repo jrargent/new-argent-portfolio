@@ -16,7 +16,7 @@ function Resume({ currentSection }) {
               className="doc col-12"
               width="700"
               height="550"
-              src="https://docs.google.com/document/d/1B8CEt-60yKenp94ywMcA_8CH8Bj2GBb22npHI2oEqPI/edit?usp=sharing"
+              src="https://docs.google.com/document/d/1fIokwGZsT4Ix-_V2bGEa4LMKE3O40JbP6J1ygiza5dI/edit?usp=sharing"
             ></iframe>
           </Col>{' '}
         </Row>
